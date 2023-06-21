@@ -112,10 +112,6 @@ const LessonContainer = () => {
     setOpenDelete(false);
   };
 
-  const handleDeleteLesson = (lesson) => {
-    handleOpenDelete(lesson);
-  };
-
   const handleDelete = async () => {
     const response = await deleteLesson(selectedLesson.id);
     if (response.status === 0) {
@@ -142,7 +138,7 @@ const LessonContainer = () => {
                 key={lesson.id}
                 lesson={lesson}
                 onEditLesson={handleEditLesson}
-                onDeleteLesson={handleDeleteLesson}
+                onDeleteLesson={handleOpenDelete}
               />
             ))}
           </Grid>

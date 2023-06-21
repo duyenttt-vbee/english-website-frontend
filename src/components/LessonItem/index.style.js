@@ -11,8 +11,6 @@ export const StyledCardActions = styled(CardActions)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px !important;
-  padding: 10px !important;
 `;
 
 export const StyledTypography = styled(Typography)`
